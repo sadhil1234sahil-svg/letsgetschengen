@@ -1,0 +1,77 @@
+:root {
+  /* Core Brand Palette */
+  --color-orange: #fd550a;
+  --color-orange-hover: #e54904;
+  --color-orange-subtle: rgba(253, 85, 10, 0.08);
+  --color-orange-glow: rgba(253, 85, 10, 0.28);
+  --color-crest-yellow: #e0f354;
+  --color-crest-yellow-hover: #d3e83d;
+  --color-crest-yellow-subtle: rgba(224, 243, 84, 0.12);
+  --color-forest-green: #015d47;
+  --color-forest-green-hover: #014b39;
+  --color-forest-green-subtle: rgba(1, 93, 71, 0.08);
+
+  /* Deep European Midnight Palette */
+  --color-white: #ffffff;
+  --color-dark: #0c0f24;
+  --color-dark-card: #141836;
+  --color-dark-card-hover: #1c224a;
+  --color-dark-indigo: #161a3e;
+  --color-dark-surface: #0f132e;
+  --color-light-neutral: #f8fafc;
+  --color-light-blue: #f0f5fc;
+  --color-light-card: #ffffff;
+
+  /* Typography & Neutral Ink */
+  --color-ink: #0d1326;
+  --color-ink-muted: #475569;
+  --color-ink-subtle: #64748b;
+  --color-ink-faint: #94a3b8;
+  --color-border-light: #e2e8f0;
+  --color-border-blue: #cbd5e1;
+  --color-border-dark: rgba(255, 255, 255, 0.12);
+  --color-border-card: rgba(13, 19, 38, 0.08);
+  --color-error: #ef4444;
+  --color-error-light: #dc2626;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+
+  /* Glassmorphism & Overlays */
+  --glass-bg-light: rgba(255, 255, 255, 0.85);
+  --glass-bg-dark: rgba(20, 24, 54, 0.75);
+  --glass-border-light: rgba(255, 255, 255, 0.6);
+  --glass-border-dark: rgba(255, 255, 255, 0.12);
+
+  /* Font Family */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-2xl: 36px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 2px 4px rgba(12, 15, 36, 0.04);
+  --shadow-sm: 0 6px 16px rgba(12, 15, 36, 0.06);
+  --shadow-md: 0 12px 30px rgba(12, 15, 36, 0.08);
+  --shadow-lg: 0 20px 48px rgba(12, 15, 36, 0.12);
+  --shadow-xl: 0 28px 64px rgba(12, 15, 36, 0.18);
+  --shadow-glow: 0 0 40px rgba(253, 85, 10, 0.22);
+  --shadow-glow-yellow: 0 0 30px rgba(224, 243, 84, 0.25);
+
+  /* Layout */
+  --container-max: 1220px;
+  --section-pad-y: 96px;
+  --section-pad-y-mobile: 64px;
+  --header-height: 76px;
+
+  /* Motion */
+  --transition-fast: 180ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-base: 260ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-slow: 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
