@@ -2,10 +2,12 @@ export const SITE_CONFIG = {
   brandName: 'LetsGetSchengen',
   domain: 'letsgetschengen.com',
   email: 'hello@letsgetschengen.com',
-  phone: '+44 20 7946 0192',
-  whatsappNumber: '442079460192',
-  whatsappBaseUrl: 'https://wa.me/442079460192',
-  officeHours: 'Mon – Sat, 9:00 AM – 7:00 PM GMT',
+  phone: '+971 50 553 6123',
+  phoneRaw: '+971505536123',
+  phoneDisplay: '+971 50 553 6123',
+  whatsappNumber: '971505536123',
+  whatsappBaseUrl: 'https://wa.me/971505536123',
+  officeHours: 'Available 24/7 – Quick Response',
 };
 
 export function buildWhatsAppUrl(customMessage) {

@@ -294,6 +294,105 @@ ol {
   gap: 12px;
 }
 
+/* Header Call CTA with 24x7 Quick Response Note */
+.header__call-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.header__call-note {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-crest-yellow);
+  white-space: nowrap;
+}
+
+.header--scrolled .header__call-note {
+  color: var(--color-forest-green);
+}
+
+.header__phone-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-crest-yellow);
+  color: var(--color-dark);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  box-shadow: 0 4px 14px rgba(224, 243, 84, 0.28);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.header__phone-btn:hover {
+  background-color: var(--color-crest-yellow-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(224, 243, 84, 0.4);
+}
+
+.header__phone-btn--scrolled {
+  background-color: var(--color-forest-green);
+  color: var(--color-white);
+  box-shadow: 0 4px 14px rgba(1, 93, 71, 0.25);
+}
+
+.header__phone-btn--scrolled:hover {
+  background-color: var(--color-forest-green-hover);
+  box-shadow: 0 8px 20px rgba(1, 93, 71, 0.35);
+}
+
+.header__phone-icon {
+  flex-shrink: 0;
+}
+
+/* Header Quick Mobile Call Button */
+.header__mobile-call-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-crest-yellow);
+  color: var(--color-dark);
+  box-shadow: 0 4px 12px rgba(224, 243, 84, 0.25);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.header--scrolled .header__mobile-call-btn {
+  background-color: var(--color-forest-green);
+  color: var(--color-white);
+}
+
+/* Mobile Drawer Call Section */
+.mobile-drawer__call-section {
+  padding-top: 18px;
+  border-top: 1px solid var(--color-border-light);
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-drawer__call-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-forest-green);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 12px;
+}
+
 .header__menu-btn {
   display: none;
   align-items: center;
@@ -2338,4 +2437,134 @@ ol {
   .faq-modern-panel-inner p {
     padding-left: 24px;
   }
+
+  .header__call-wrapper {
+    display: none;
+  }
+
+  .header__mobile-call-btn {
+    display: inline-flex;
+  }
+
+  .floating-actions {
+    bottom: 20px;
+    right: 16px;
+    gap: 10px;
+  }
+
+  .floating-btn {
+    padding: 10px 14px;
+    font-size: 0.84rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .floating-btn__label {
+    display: none;
+  }
+
+  .floating-btn {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}
+
+/* ==========================================================================
+   Floating 24/7 Call and WhatsApp Action Buttons
+   ========================================================================== */
+
+.floating-actions {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+.floating-btn {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.32);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+}
+
+.floating-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.floating-btn:active {
+  transform: translateY(0) scale(1);
+}
+
+/* WhatsApp Floating Button */
+.floating-btn--whatsapp {
+  background-color: #25d366;
+  color: #ffffff;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.45);
+}
+
+.floating-btn--whatsapp:hover {
+  background-color: #20bd5a;
+  box-shadow: 0 14px 34px rgba(37, 211, 102, 0.6);
+}
+
+.floating-btn__pulse {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px #ffffff;
+  animation: float-pulse 2s infinite;
+}
+
+@keyframes float-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.4; }
+}
+
+/* Phone Call Floating Button */
+.floating-btn--phone {
+  background: linear-gradient(135deg, #101438 0%, #1a2254 100%);
+  color: var(--color-white);
+  border: 1.5px solid rgba(224, 243, 84, 0.4);
+  box-shadow: 0 10px 28px rgba(16, 20, 56, 0.45);
+}
+
+.floating-btn--phone:hover {
+  border-color: var(--color-crest-yellow);
+  box-shadow: 0 14px 34px rgba(16, 20, 56, 0.65);
+}
+
+.floating-btn--phone .floating-btn__icon {
+  color: var(--color-crest-yellow);
+}
+
+.floating-btn__icon {
+  flex-shrink: 0;
+}
+
+.floating-btn__label {
+  display: inline-block;
+  letter-spacing: -0.01em;
 }

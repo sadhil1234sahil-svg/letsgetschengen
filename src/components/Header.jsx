@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Menu, X, ArrowRight } from 'lucide-react';
+import { Menu, X, Phone, MessageCircle } from 'lucide-react';
 import BrandLogo from './BrandLogo';
-import { NAV_LINKS } from '../data/siteContent';
+import { NAV_LINKS, SITE_CONFIG, buildWhatsAppUrl } from '../data/siteContent';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,14 +34,28 @@ export default function Header() {
         </nav>
 
         <div className="header__actions">
+          {/* Prominent Phone Call Action with 24x7 Quick Response Note */}
+          <div className="header__call-wrapper">
+            <span className="header__call-note">For quick response call 24x7</span>
+            <a
+              href={`tel:${SITE_CONFIG.phoneRaw}`}
+              className={`header__phone-btn ${
+                scrolled ? 'header__phone-btn--scrolled' : ''
+              }`}
+              aria-label={`For quick response call 24x7 at ${SITE_CONFIG.phoneDisplay}`}
+            >
+              <Phone size={15} className="header__phone-icon" aria-hidden="true" />
+              <span>{SITE_CONFIG.phoneDisplay}</span>
+            </a>
+          </div>
+
+          {/* Quick Mobile Direct Call Icon */}
           <a
-            href="#lead-form"
-            className={`btn btn--sm header__cta-desktop ${
-              scrolled ? 'btn--on-light-primary' : 'btn--on-dark-primary'
-            }`}
+            href={`tel:${SITE_CONFIG.phoneRaw}`}
+            className="header__mobile-call-btn"
+            aria-label={`Call ${SITE_CONFIG.phoneDisplay} 24/7`}
           >
-            <span>Book Consultation</span>
-            <ArrowRight size={15} aria-hidden="true" />
+            <Phone size={18} aria-hidden="true" />
           </a>
 
           <button
@@ -71,14 +85,32 @@ export default function Header() {
               </a>
             ))}
           </nav>
-          <a
-            href="#lead-form"
-            className="btn btn--on-light-primary btn--full"
-            onClick={handleLinkClick}
-          >
-            Get in Touch
-            <ArrowRight size={16} aria-hidden="true" />
-          </a>
+
+          <div className="mobile-drawer__call-section">
+            <div className="mobile-drawer__call-tag">
+              <span className="live-status-dot" aria-hidden="true" />
+              <span>For quick response call 24x7</span>
+            </div>
+            <a
+              href={`tel:${SITE_CONFIG.phoneRaw}`}
+              className="btn btn--on-dark-primary btn--full"
+              onClick={handleLinkClick}
+            >
+              <Phone size={17} aria-hidden="true" />
+              <span>{SITE_CONFIG.phoneDisplay}</span>
+            </a>
+            <a
+              href={buildWhatsAppUrl('Hello LetsGetSchengen, I would like to consult with an advisor about my upcoming European trip.')}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn--glass btn--full"
+              style={{ marginTop: '10px' }}
+              onClick={handleLinkClick}
+            >
+              <MessageCircle size={17} aria-hidden="true" />
+              <span>WhatsApp Support</span>
+            </a>
+          </div>
         </div>
       )}
     </header>

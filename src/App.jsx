@@ -11,6 +11,7 @@ import SupportProtocolSection from './components/SupportProtocolSection';
 import FaqSection from './components/FaqSection';
 import Footer from './components/Footer';
 import LegalModal from './components/LegalModal';
+import FloatingContactButtons from './components/FloatingContactButtons';
 
 export default function App() {
   const [selectedService, setSelectedService] = useState('');
@@ -50,6 +51,9 @@ export default function App() {
 
       {/* Section 10: Footer */}
       <Footer onOpenLegal={setLegalModal} />
+
+      {/* Floating 24/7 Call and WhatsApp Shortcuts */}
+      <FloatingContactButtons />
 
       <LegalModal type={legalModal} onClose={() => setLegalModal(null)} />
     </>
