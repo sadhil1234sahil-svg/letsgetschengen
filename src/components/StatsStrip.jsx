@@ -1,10 +1,10 @@
-import { Users, Globe2, Award, Clock3, Shield } from 'lucide-react';
+import { Users, Globe2, Award, Clock3, Shield, CheckCircle2 } from 'lucide-react';
 import { STATS_ITEMS } from '../data/siteContent';
 
 const STAT_ICONS = {
-  travellers: Users,
   destinations: Globe2,
-  satisfaction: Award,
+  support: Users,
+  centres: CheckCircle2,
   response: Clock3,
 };
 
@@ -16,16 +16,16 @@ const EUROPE_CITIES = [
 
 export default function StatsStrip() {
   return (
-    <section className="stats-strip-modern" aria-label="Consultancy trust and achievement statistics">
+    <section className="stats-strip-modern" aria-label="Consultancy service scope and capabilities">
       <div className="container">
         <div className="stats-strip-modern__inner">
           <div className="stats-strip-modern__header">
             <span className="stats-strip-modern__eyebrow">
               <Shield size={14} aria-hidden="true" />
-              Trusted European Travel Mobility Standards
+              Professional Schengen Documentation Advisory
             </span>
             <p className="stats-strip-modern__tagline">
-              Proven results backing individual travellers, families, and global professionals.
+              Hands-on checklist planning, accurate form filling, and appointment scheduling support for travellers in the UAE and worldwide.
             </p>
           </div>
 

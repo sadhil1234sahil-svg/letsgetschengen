@@ -1,4 +1,4 @@
-import { Star, ShieldCheck, Plane, Sparkles } from 'lucide-react';
+import { Star, ShieldCheck, Sparkles } from 'lucide-react';
 import { TESTIMONIALS_ITEMS } from '../data/siteContent';
 
 const DESTINATION_FLAGS = {
@@ -17,14 +17,14 @@ export default function TestimonialsSection() {
         <div className="section-header section-header--center">
           <div className="badge-tag">
             <Sparkles size={14} aria-hidden="true" />
-            <span>Verified Client Feedback</span>
+            <span>Client Experiences &amp; Feedback</span>
           </div>
           <h2 className="section-title">
-            Real European Journeys. Seamless Dossier Outcomes.
+            Genuine Feedback from Travellers We’ve Supported
           </h2>
           <p className="section-subtitle">
-            Travellers trust LetsGetSchengen when the margin for error is zero. Here is what our clients
-            say about our structured reviews and rapid advisor assistance.
+            Read how our structured document checklists, timeline coordination, and 1-on-1 advisor care
+            helped UAE and international travellers prepare their European travel files with confidence.
           </p>
 
           <div className="rating-pill-banner" aria-label="Rating summary">
@@ -34,7 +34,7 @@ export default function TestimonialsSection() {
               ))}
             </div>
             <span className="rating-pill-text">
-              <strong>4.98 / 5.0</strong> Client Satisfaction Score Across 1,200+ Guided Applications
+              Dedicated Support Across <strong>29 Schengen Countries</strong> &bull; Tailored Travel Files
             </span>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function TestimonialsSection() {
                     <span className="passport-card__dest-name">{item.destination}</span>
                   </div>
                   <span className="passport-card__stamp" aria-hidden="true">
-                    VERIFIED DOSSIER
+                    TRIP PREPARATION
                   </span>
                 </div>
 
@@ -75,7 +75,7 @@ export default function TestimonialsSection() {
                     <p className="passport-card__name">{item.name}</p>
                     <p className="passport-card__verified">
                       <ShieldCheck size={14} className="passport-check-icon" aria-hidden="true" />
-                      <span>Verified Traveller</span>
+                      <span>Client Consultation</span>
                     </p>
                   </div>
                 </div>

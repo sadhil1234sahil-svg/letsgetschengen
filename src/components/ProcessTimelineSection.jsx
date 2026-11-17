@@ -13,33 +13,33 @@ import { PROCESS_STEPS } from '../data/siteContent';
 const STEP_DETAILS = [
   {
     icon: Compass,
-    timeframe: 'Day 1 • 30 Min Discovery',
+    timeframe: 'Stage 1 • Initial Review',
     deliverable: 'Trip Scope Assessment',
-    highlight: 'Destination rules, passport validity, and bespoke strategy formulated.',
+    highlight: 'Destination embassy rules, passport validity criteria, and tailored checklist formulation.',
   },
   {
     icon: FileSpreadsheet,
-    timeframe: 'Day 2 • Custom Blueprint',
-    deliverable: 'Itemised Document Checklist',
-    highlight: 'Tailored checklist covering financial, employment, and travel proofs.',
+    timeframe: 'Stage 2 • Checklist Plan',
+    deliverable: 'Itemised Requirements Checklist',
+    highlight: 'Tailored requirements covering financial statements, employment NOCs, and accommodation proofs.',
   },
   {
     icon: CheckCheck,
-    timeframe: 'Day 3–5 • Rigorous Audit',
-    deliverable: 'Dossier Audit & Verification',
-    highlight: 'Zero discrepancies, aligned flight/hotel dates, and cover letter draft.',
+    timeframe: 'Stage 3 • Document Audit',
+    deliverable: 'Document Review & Alignment',
+    highlight: 'Cross-checking flight & hotel dates, cover letter narrative, and mandatory travel insurance.',
   },
   {
     icon: CalendarDays,
-    timeframe: 'Centre Window Tracking',
-    deliverable: 'Jurisdiction & Slot Booking',
-    highlight: 'Coordination across VFS/TLS/BLS centres for maximum timeliness.',
+    timeframe: 'Stage 4 • Appointment Prep',
+    deliverable: 'Submission Centre Guidance',
+    highlight: 'Step-by-step guidance for VFS Global, TLScontact, or BLS International appointments.',
   },
   {
     icon: PlaneTakeoff,
-    timeframe: 'Pre-Submission & Flight',
-    deliverable: 'Submission Readiness Dossier',
-    highlight: 'Sequential file ordering, mock interview questions, and departure peace of mind.',
+    timeframe: 'Stage 5 • Final Briefing',
+    deliverable: 'Final Dossier Organisation',
+    highlight: 'Sequential document ordering, appointment day checklist, and pre-departure preparation.',
   },
 ];
 
@@ -52,10 +52,10 @@ export default function ProcessTimelineSection() {
             <Sparkles size={14} aria-hidden="true" />
             <span>Structured 5-Stage Framework</span>
           </div>
-          <h2 className="section-title">Your Journey to European Travel Clearance</h2>
+          <h2 className="section-title">Step-by-Step European Travel Preparation Roadmap</h2>
           <p className="section-subtitle">
-            We replace anxiety and conflicting online forums with a milestone-driven roadmap
-            that guarantees thorough preparation from first enquiry to your European departure.
+            We replace uncertainty and fragmented online advice with a clear, sequential roadmap
+            designed to ensure your travel documents are complete, compliant, and properly organised.
           </p>
         </div>
 

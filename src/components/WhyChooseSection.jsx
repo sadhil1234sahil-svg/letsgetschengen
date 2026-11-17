@@ -14,11 +14,11 @@ import {
 import { WHY_CHOOSE_ITEMS } from '../data/siteContent';
 
 const CHECKLIST_ITEMS = [
-  'Passport Validity & Schengen 90/180 Rule Audited',
+  'Passport Validity & Schengen 90/180-Day Duration Checked',
   'Tailored Cover Letter & Purpose Narrative Drafted',
-  'Verified Flight Itinerary & Hotel Proof Alignment',
-  '€30,000+ EU Medical Coverage Policy Verification',
-  'Employment & Proof of Financial Sustenance Pack',
+  'Flight Reservation & Hotel Voucher Date Cross-Checking',
+  '€30,000+ EU Compliant Travel Insurance Verification',
+  'Employment NOC, Bank Proofs & UAE Residency Verification',
 ];
 
 export default function WhyChooseSection() {
@@ -31,11 +31,11 @@ export default function WhyChooseSection() {
             <span>The LetsGetSchengen Advantage</span>
           </div>
           <h2 className="section-title">
-            Engineered For Clarity. Dedicated to Your Peace of Mind.
+            Structured For Accuracy. Dedicated to Stress-Free Preparation.
           </h2>
           <p className="section-subtitle">
-            We don’t rely on generic templates or robotic answers. Every client receives an attentive,
-            meticulously verified dossier strategy backed by experienced European consultants.
+            We don’t rely on generic templates or make unrealistic promises. Every client receives attentive,
+            meticulous documentation guidance backed by knowledgeable travel consultants.
           </p>
         </div>
 
@@ -48,15 +48,15 @@ export default function WhyChooseSection() {
               <span>Dossier Inspection Protocol</span>
             </div>
             <h3 className="bento-card__title">
-              Personalised Document Roadmaps That Leave Zero Room for Ambiguity
+              Tailored Document Checklists That Minimise Avoidable Application Errors
             </h3>
             <p className="bento-card__desc">
-              Consulates scrutinise minor inconsistencies — from date mismatches to unclear sponsorship
-              letters. Our audit process cross-references every single document before your submission.
+              Consulates scrutinise inconsistencies — from mismatched hotel check-in dates to unclear employment
+              sponsorship letters. Our review process cross-references every supporting record before you submit.
             </p>
 
             <div className="bento-checklist">
-              <span className="bento-checklist__header">Every Dossier Undergoes Our 5-Point Validation:</span>
+              <span className="bento-checklist__header">Key Document Elements We Audit:</span>
               <ul className="bento-checklist__list">
                 {CHECKLIST_ITEMS.map((item) => (
                   <li key={item} className="bento-checklist__item">
@@ -72,16 +72,15 @@ export default function WhyChooseSection() {
           <div className="bento-card bento-card--medium">
             <div className="bento-card__badge bento-card__badge--orange">
               <Zap size={16} />
-              <span>Rapid Turnaround</span>
+              <span>Responsive Support</span>
             </div>
-            <h3 className="bento-card__title">Under 2-Hour Response Time</h3>
+            <h3 className="bento-card__title">Direct Advisor Accessibility</h3>
             <p className="bento-card__desc">
-              When appointment slots open unpredictably or travel dates draw near, waiting days for an email
-              is not an option.
+              When appointment slots open unpredictably or travel dates draw near, you can connect directly with your assigned consultant.
             </p>
             <div className="bento-metric-box">
-              <span className="bento-metric-val">&lt; 120 min</span>
-              <span className="bento-metric-label">Average Advisor Response Time via WhatsApp &amp; Email</span>
+              <span className="bento-metric-val">24 / 7</span>
+              <span className="bento-metric-label">Direct WhatsApp &amp; Phone Line (+971 50 553 6123)</span>
             </div>
           </div>
 
@@ -91,10 +90,10 @@ export default function WhyChooseSection() {
               <Globe size={16} />
               <span>Pan-European Scope</span>
             </div>
-            <h3 className="bento-card__title">All 29 Schengen States Mapped</h3>
+            <h3 className="bento-card__title">All 29 Schengen States Supported</h3>
             <p className="bento-card__desc">
-              From multi-city rail itineraries to single-country conferences, we understand the distinct
-              requirements of every member consulate.
+              From multi-city tourist itineraries to business and conference visits, we understand the specific
+              documentation guidelines of each Schengen member.
             </p>
             <div className="bento-tags-row">
               <span className="bento-tag">France</span>
@@ -123,12 +122,12 @@ export default function WhyChooseSection() {
           <div className="bento-card bento-card--split">
             <div className="bento-card__badge bento-card__badge--green">
               <Lock size={16} />
-              <span>100% Confidential</span>
+              <span>Strict Confidentiality</span>
             </div>
-            <h3 className="bento-card__title">Bank-Grade Privacy Standards</h3>
+            <h3 className="bento-card__title">Data Privacy &amp; Security</h3>
             <p className="bento-card__desc">
-              Your financial statements, passports, and personal itinerary records are handled strictly
-              under rigorous UK &amp; EU data protection standards.
+              Your financial statements, passports, and personal travel records are handled strictly
+              under secure data protection protocols and never shared.
             </p>
           </div>
         </div>

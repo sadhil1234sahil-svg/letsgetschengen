@@ -79,7 +79,7 @@ export default function LeadFormSection() {
         <div className="lead-modern-info">
           <div className="badge-tag">
             <Zap size={14} aria-hidden="true" />
-            <span>Fast-Track 2026 Consultation</span>
+            <span>Personalised Travel Consultation</span>
           </div>
 
           <h2 className="lead-modern-title">
@@ -88,8 +88,7 @@ export default function LeadFormSection() {
 
           <p className="lead-modern-desc">
             Submit your upcoming trip details and an experienced Schengen documentation advisor will
-            personally evaluate your itinerary, check centre jurisdiction rules, and provide clear
-            next steps within 2 hours.
+            review your itinerary, verify centre jurisdiction rules, and provide a tailored document checklist.
           </p>
 
           <div className="lead-perks-list">
@@ -99,7 +98,7 @@ export default function LeadFormSection() {
               </div>
               <div>
                 <strong>Tailored Dossier Checklist</strong>
-                <p>Specific to your nationality, destination embassy, and employment status.</p>
+                <p>Specific to your nationality, destination embassy, and employment / residency status.</p>
               </div>
             </div>
 
@@ -109,7 +108,7 @@ export default function LeadFormSection() {
               </div>
               <div>
                 <strong>Jurisdiction &amp; Timeline Alignment</strong>
-                <p>Accurate submission centre selection (VFS/TLS/BLS) to avoid rejected appointments.</p>
+                <p>Accurate submission centre guidance (VFS Global, TLScontact, or BLS International) based on your travel plan.</p>
               </div>
             </div>
 
@@ -119,7 +118,7 @@ export default function LeadFormSection() {
               </div>
               <div>
                 <strong>1-on-1 Specialist Advisor</strong>
-                <p>Direct communication via WhatsApp or phone with zero automated runaround.</p>
+                <p>Direct communication with your assigned advisor via WhatsApp or phone (+971 50 553 6123).</p>
               </div>
             </div>
           </div>
@@ -128,8 +127,8 @@ export default function LeadFormSection() {
           <div className="lead-guarantee-card">
             <ShieldCheck size={26} className="lead-guarantee-icon" aria-hidden="true" />
             <div>
-              <strong>100% Confidential &amp; Obligation-Free</strong>
-              <p>Your details are protected under UK/EU GDPR and used strictly for your travel consultation.</p>
+              <strong>Strictly Confidential &amp; Obligation-Free</strong>
+              <p>Your details are protected under standard privacy policies and used solely for your consultation.</p>
             </div>
           </div>
         </div>

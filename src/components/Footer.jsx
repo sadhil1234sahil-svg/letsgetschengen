@@ -129,6 +129,12 @@ export default function Footer({ onOpenLegal }) {
           </div>
         </div>
 
+        <div className="footer__disclaimer">
+          <p>
+            <strong>Legal Disclaimer:</strong> LetsGetSchengen ({SITE_CONFIG.domain}) is an independent private consultancy providing European travel document preparation, checklist review, and appointment coordination advisory. We are not an official government agency, embassy, or consulate, and are not affiliated with any European diplomatic mission or outsourced visa application centre (including VFS Global, TLScontact, or BLS International). Decisions on visa issuance, document acceptance, and processing timelines are made solely and independently by the respective competent embassy or consulate authorities.
+          </p>
+        </div>
+
         <div className="footer__bottom">
           <span>
             &copy; {year} {SITE_CONFIG.brandName} ({SITE_CONFIG.domain}). All rights reserved.

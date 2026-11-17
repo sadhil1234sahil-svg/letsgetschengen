@@ -2219,6 +2219,23 @@ ol {
   color: var(--color-crest-yellow);
 }
 
+.footer__disclaimer {
+  padding-block: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.footer__disclaimer p {
+  margin-bottom: 0;
+}
+
+.footer__disclaimer strong {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
+}
+
 .footer__bottom {
   padding-top: 24px;
   display: flex;

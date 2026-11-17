@@ -4,40 +4,39 @@ import {
   BellRing,
   CheckCircle2,
   ArrowRight,
-  ShieldAlert,
   Headphones,
-  Clock,
   Sparkles,
+  PhoneCall,
 } from 'lucide-react';
-import { SUPPORT_PROTOCOL_ITEMS, buildWhatsAppUrl, SITE_CONFIG } from '../data/siteContent';
+import { buildWhatsAppUrl, SITE_CONFIG } from '../data/siteContent';
 
 const PROTOCOL_CARDS = [
   {
     icon: Headphones,
-    sla: '< 120 Min Callback SLA',
-    title: 'Dedicated Senior Specialist',
-    description: 'You work with a designated travel documentation advisor who personally manages your file from day one.',
-    metric: '1-on-1 WhatsApp & Phone Line',
+    sla: 'Direct Advisor Access',
+    title: 'Dedicated Travel Specialist',
+    description: 'You work directly with a designated travel documentation specialist who understands your route and assists you step by step.',
+    metric: '1-on-1 Direct Support Line',
   },
   {
     icon: CheckCircle2,
-    sla: '100% Dual-Review Standard',
+    sla: 'Thorough Pre-Check',
     title: 'Pre-Submission File Audit',
-    description: 'Every statement, invitation, and travel voucher is checked against specific consular checklists before submission.',
-    metric: 'Zero Discrepancy Tolerance',
+    description: 'Every statement, invitation letter, flight reservation, and travel policy is reviewed against specific destination criteria.',
+    metric: 'Detailed Checklist Verification',
   },
   {
     icon: BellRing,
     sla: 'Proactive Milestone Alerts',
     title: 'Timeline & Deadline Tracking',
-    description: 'We track your document validity windows, ensuring bank proofs and insurance policies remain strictly valid.',
-    metric: 'No Expired Document Risks',
+    description: 'We track your document validity windows, ensuring bank proofs, NOCs, and insurance policies remain strictly valid for submission.',
+    metric: 'Structured Scheduling Guidance',
   },
   {
     icon: Users,
     sla: 'Transparent Guidance',
     title: 'Clear, Jargon-Free Communication',
-    description: 'We demystify complex consulate guidelines into simple, sequential action steps tailored to your itinerary.',
+    description: 'We translate complex consulate guidelines into simple, sequential action steps tailored to your personal itinerary.',
     metric: 'Plain-English Checklists',
   },
 ];
@@ -49,12 +48,12 @@ export default function SupportProtocolSection() {
         <div className="section-header section-header--center">
           <div className="badge-tag">
             <Sparkles size={14} aria-hidden="true" />
-            <span>Consultancy Service Level Agreement</span>
+            <span>Our Service Commitments</span>
           </div>
-          <h2 className="section-title">Our Strict Support Protocol &amp; Care Standards</h2>
+          <h2 className="section-title">Professional Standards &amp; Client Care Commitments</h2>
           <p className="section-subtitle">
-            Consultancy is only as good as the accountability behind it. We guarantee responsive,
-            honest, and meticulous guidance across all four pillars of our travel standard.
+            We believe in honest, transparent, and structured advisory. Every traveller receives
+            thorough guidance focused on accuracy, clarity, and peace of mind.
           </p>
         </div>
 
@@ -87,22 +86,22 @@ export default function SupportProtocolSection() {
         <div className="emergency-desk-strip">
           <div className="emergency-desk-strip__info">
             <div className="emergency-desk-badge">
-              <ShieldAlert size={16} aria-hidden="true" />
-              <span>Priority Travel Desk Active</span>
+              <PhoneCall size={16} aria-hidden="true" />
+              <span>Need Immediate Travel Advisory?</span>
             </div>
             <h3 className="emergency-desk-title">
-              Have Tight Travel Dates or Urgent Documentation Questions?
+              Have Upcoming Travel Dates or Documentation Questions?
             </h3>
             <p className="emergency-desk-text">
-              Directly connect with our European documentation coordinators right now. We review
-              upcoming travel timelines immediately.
+              Connect directly with our European documentation advisors right now. Call{' '}
+              <strong>{SITE_CONFIG.phone}</strong> or message us on WhatsApp for 24/7 assistance.
             </p>
           </div>
 
           <div className="emergency-desk-actions">
             <a
               href={buildWhatsAppUrl(
-                'Hello LetsGetSchengen, I need urgent priority advice for my upcoming European journey.'
+                'Hello LetsGetSchengen, I have questions regarding my upcoming European travel documentation.'
               )}
               target="_blank"
               rel="noopener noreferrer"
@@ -112,9 +111,9 @@ export default function SupportProtocolSection() {
               <span>Chat on WhatsApp</span>
             </a>
 
-            <a href="#lead-form" className="btn btn--glass">
-              <span>Book Priority Callback</span>
-              <ArrowRight size={16} aria-hidden="true" />
+            <a href={`tel:${SITE_CONFIG.phone.replace(/\s+/g, '')}`} className="btn btn--glass">
+              <PhoneCall size={16} aria-hidden="true" />
+              <span>Call 24/7 Advisor</span>
             </a>
           </div>
         </div>

@@ -30,19 +30,19 @@ export default function App() {
         {/* Section 3: Trust Metrics & European Coverage Bar */}
         <StatsStrip />
 
-        {/* Section 4: 5-Stage European Travel Clearance Roadmap */}
+        {/* Section 4: 5-Stage European Travel Preparation Roadmap */}
         <ProcessTimelineSection />
 
         {/* Section 5: Why Choose LetsGetSchengen (Bento Grid) */}
         <WhyChooseSection />
 
-        {/* Section 6: Fast-Track Consultation Studio (Lead Form) */}
+        {/* Section 6: Personalised Consultation Studio (Lead Form) */}
         <LeadFormSection selectedService={selectedService} />
 
-        {/* Section 7: Verified Traveller Stories & Passport Reviews */}
+        {/* Section 7: Client Reviews & Boarding Pass Stories */}
         <TestimonialsSection />
 
-        {/* Section 8: VIP Support Protocol & Executive SLA */}
+        {/* Section 8: Service Standards & Commitments */}
         <SupportProtocolSection />
 
         {/* Section 9: Interactive Knowledge Base & FAQs */}

@@ -46,7 +46,7 @@ export default function HeroSection({ onSelectService }) {
         <div className="hero__content">
           <div className="hero__status-badge">
             <span className="hero__pulse-dot" aria-hidden="true" />
-            <span>2026 Schengen Travel Dossier Support Live</span>
+            <span>European Travel Documentation &amp; Checklist Advisory</span>
           </div>
 
           <h1 className="hero__headline">
@@ -80,8 +80,8 @@ export default function HeroSection({ onSelectService }) {
             <div className="hero__trust-item">
               <ShieldCheck size={18} className="hero__trust-icon" aria-hidden="true" />
               <div>
-                <strong>12,500+ Travellers</strong>
-                <span>Assisted Across Europe</span>
+                <strong>UAE &amp; Global Residents</strong>
+                <span>Tailored Application Roadmaps</span>
               </div>
             </div>
 
@@ -89,15 +89,15 @@ export default function HeroSection({ onSelectService }) {
               <Calendar size={18} className="hero__trust-icon" aria-hidden="true" />
               <div>
                 <strong>29 Schengen Countries</strong>
-                <span>Direct Embassy Alignment</span>
+                <span>VFS, TLS &amp; BLS Prep</span>
               </div>
             </div>
 
             <div className="hero__trust-item">
               <CheckCircle2 size={18} className="hero__trust-icon" aria-hidden="true" />
               <div>
-                <strong>1-on-1 Guidance</strong>
-                <span>Zero Automation Guesswork</span>
+                <strong>1-on-1 Dedicated Advisor</strong>
+                <span>Personalised Dossier Review</span>
               </div>
             </div>
           </div>
@@ -114,8 +114,8 @@ export default function HeroSection({ onSelectService }) {
                 <FileText size={18} />
               </div>
               <div>
-                <p className="hero__floating-title">Dossier Audit</p>
-                <p className="hero__floating-sub">100% Pre-Check Complete</p>
+                <p className="hero__floating-title">Document Audit</p>
+                <p className="hero__floating-sub">Checklist &amp; Route Review</p>
               </div>
             </div>
 
@@ -125,7 +125,7 @@ export default function HeroSection({ onSelectService }) {
               </div>
               <div>
                 <p className="hero__floating-title">Appointment Guidance</p>
-                <p className="hero__floating-sub">Jurisdiction &amp; Slot Prep</p>
+                <p className="hero__floating-sub">Centre Booking Assistance</p>
               </div>
             </div>
 

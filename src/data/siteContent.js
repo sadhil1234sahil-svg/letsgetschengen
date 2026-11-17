@@ -41,33 +41,33 @@ export const HERO_CONTENT = {
     href: '#services',
   },
   trustItems: [
-    'Trusted by 12,500+ Travellers',
-    '29 Schengen Destinations Covered',
-    'Dedicated 1-on-1 Specialist Support',
+    '29 Schengen Destinations Supported',
+    'Tailored Dossier Checklists',
+    'Dedicated 1-on-1 Specialist Guidance',
   ],
 };
 
-// Replace placeholder figures with verified business metrics when available.
+// Verified service capabilities and operational scope
 export const STATS_ITEMS = [
-  {
-    id: 'travellers',
-    value: '12,500+',
-    label: 'Travellers Assisted',
-  },
   {
     id: 'destinations',
     value: '29',
-    label: 'European Destinations Covered',
+    label: 'Schengen Countries Supported',
   },
   {
-    id: 'satisfaction',
-    value: '98.6%',
-    label: 'Client Satisfaction',
+    id: 'support',
+    value: '1-on-1',
+    label: 'Dedicated Case Advisory',
+  },
+  {
+    id: 'centres',
+    value: 'VFS • TLS • BLS',
+    label: 'Submission Centre Alignment',
   },
   {
     id: 'response',
-    value: '< 2 hrs',
-    label: 'Average Response Time',
+    value: '24/7',
+    label: 'WhatsApp & Call Accessibility',
   },
 ];
 
@@ -195,7 +195,7 @@ export const SERVICES_ITEMS = [
       'A thorough final inspection of your complete travel dossier plus practical preparation before you attend or depart.',
     highlights: [
       'Full dossier consistency audit',
-      'Missing-item & discrepancy check',
+      'Missing-item & consistency check',
       'Submission day readiness brief',
       'Post-submission & departure tips',
     ],

@@ -72,9 +72,11 @@ export default function LegalModal({ type, onClose }) {
               coordination guidance.
             </p>
             <p>
-              All final travel clearance decisions remain solely at the discretion of the relevant
-              consular authorities and official submission centres. Our consultancy focuses on
-              helping travellers present complete, well-organised, and consistent documentation.
+              All final visa and travel entry decisions remain solely at the discretion of the
+              competent embassy, consulate, or border authorities. LetsGetSchengen is an independent
+              consultancy and does not issue visas or influence official government decisions. Our
+              consultancy focuses on helping travellers present complete, well-organised, and
+              consistent documentation.
             </p>
             <p style={{ marginBottom: 0 }}>
               Service scope, timelines, and consultancy fees are confirmed transparently prior to
